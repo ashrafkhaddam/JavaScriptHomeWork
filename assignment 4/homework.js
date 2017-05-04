@@ -30,7 +30,6 @@ document.onclick = function createList () {
         urlAncor.setAttribute("href", "http://www.imdb.com/title/" + arrayHolder.imdbID);
         var urlText = document.createTextNode("URL: http://www.imdb.com/title/" + arrayHolder.imdbID);
         urlAncor.appendChild(urlText);
-        /*document.getElementById("link_holder").innerHTML("http://www.imdb.com/title/" + arrayHolder.imdbID);*/ //I don't understand why this doesn't work
         urlItem.appendChild(urlAncor);
         probertiesList.appendChild(urlItem);
         var imageItem = document.createElement("li");
