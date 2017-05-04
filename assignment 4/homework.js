@@ -1,8 +1,10 @@
 var searchResults = {"Search":[{"Title":"Black Cat, White Cat","Year":"1998","imdbID":"tt0118843","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMmExZTZhN2QtMzg5Mi00Y2M5LTlmMWYtNTUzMzUwMGM2OGQ3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"},{"Title":"The Cat in the Hat","Year":"2003","imdbID":"tt0312528","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTI5MDU3MTYyMF5BMl5BanBnXkFtZTYwODgyODc3._V1_SX300.jpg"},{"Title":"Cat on a Hot Tin Roof","Year":"1958","imdbID":"tt0051459","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMzFhNTMwNDMtZjY3Yy00NzY3LWI1ZWQtZTQxMWJmODVhZWFkXkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_SX300.jpg"},{"Title":"The Cat Returns","Year":"2002","imdbID":"tt0347618","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5ODMyNTgzOV5BMl5BanBnXkFtZTcwNDM4ODAyNw@@._V1_SX300.jpg"},{"Title":"Cat People","Year":"1982","imdbID":"tt0083722","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ1MjI5MDE2M15BMl5BanBnXkFtZTgwMTY0MjEyMDE@._V1_SX300.jpg"},{"Title":"Cat People","Year":"1942","imdbID":"tt0034587","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BNzI4YWY0NWQtNWI5YS00MGE4LWE4YTgtMzBmOWIwMzdiYTRiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"},{"Title":"A Street Cat Named Bob","Year":"2016","imdbID":"tt3606888","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5MTI1MzE5Nl5BMl5BanBnXkFtZTgwMjQzNjEzOTE@._V1_SX300.jpg"},{"Title":"Cat Ballou","Year":"1965","imdbID":"tt0059017","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2MDA4MzA5Nl5BMl5BanBnXkFtZTcwMjQ1NjkxMQ@@._V1._CR0,0,267,428_SX89_AL_.jpg_V1_SX300.jpg"},{"Title":"A Cat in Paris","Year":"2010","imdbID":"tt1673702","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTAzODU0NDExMTNeQTJeQWpwZ15BbWU3MDk2NjMxMzc@._V1_SX300.jpg"},{"Title":"Fritz the Cat","Year":"1972","imdbID":"tt0068612","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BODAzMjI5YzMtNWI5Yy00NTllLWE0MWQtOWMzZTRjMmYyYTFlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"}],"totalResults":"1057","Response":"True"};
-console.log(searchResults.Search[2].Title);
-console.log(searchResults.Search.length);
 
-function createList () {
+console.log(searchResults.Search[2].Title);
+
+document.onclick = function createList () {
+    alert("Congratulation you have clicked and you may see the cat's movie list :)")
+    document.getElementById("click").innerHTML = ("");
     var container = document.createElement("div");
     container.setAttribute("style", "width:700px");
     document.body.appendChild(container);
@@ -38,10 +40,8 @@ function createList () {
         imageHolder.setAttribute("style","width:50%");
         imageItem.appendChild(imageHolder);
         probertiesList.appendChild(imageItem);
-        
-    }
+     }
     
 }
 
-createList();
 
