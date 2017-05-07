@@ -1,0 +1,45 @@
+body   {
+	  background: blue;
+	  text-align: center;
+
+}
+
+h1     {
+      color: indianred;
+      font-size: 300%;
+	  font-family:cursive;
+	  width: 50%%;
+	  margin: 2% ;
+   }
+
+ul     {
+	 width: 90%;
+	 text-align: center;
+  }
+
+a      {
+	 display:grid;
+	 text-align: center;
+	 font-size: 150%;
+     color: antiquewhite;
+ }
+
+img    {
+	  width:30%;
+	  margin: 2%;
+	  position:static;
+   }
+
+h2     {
+	 font-family:cursive;	
+	 margin: 1%;
+     color: indianred;
+  }
+
+p      {
+    color: indianred;
+    font-size: 25px;
+	font-family:cursive;
+	text-align: center;
+	
+ }
