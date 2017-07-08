@@ -13,7 +13,7 @@ console.log(objects.Search[2].Title);
 	var myUl = document.createElement('Ul');
 	document.getElementById('mmyDiv').appendChild(myUl);
 	myUl.setAttribute("id", "myList");
-}());
+}());;
 
 
 (function ListOfMovies()       {
